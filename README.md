@@ -158,13 +158,13 @@ Page2.js:
 ajaxFunction's ajax request:
     
     function ajaxFunction(param,resolve){
-	axios.get(`/api?param=${param}`)
-		.then((response)=>{
-			// do stuff
-			this.emit('gameDataIsInDaHouse');
-			if (resolve) // IMPORTANT! call resolve only if it was passed.
-				resolve();
-			});
+		axios.get(`/api?param=${param}`)
+			.then((response)=>{
+				// do stuff
+				this.emit('gameDataIsInDaHouse');
+				if (resolve) // IMPORTANT! call resolve only if it was passed.
+					resolve();
+				});
 
-	}
+}
     
