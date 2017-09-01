@@ -156,8 +156,9 @@ Page2.js:
 
 
 ajaxFunction's ajax request:
-
-    axios.get(`/api?param=${param}`)
+    
+    function ajaxFunction(param,resolve){
+	axios.get(`/api?param=${param}`)
 		.then((response)=>{
 			// do stuff
 			this.emit('gameDataIsInDaHouse');
@@ -165,4 +166,5 @@ ajaxFunction's ajax request:
 				resolve();
 			});
 
-
+	}
+    
