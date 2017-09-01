@@ -157,7 +157,7 @@ Page2.js:
 
 ajaxFunction's ajax request:
 
-    axios.get(`/gamedataapi?id=${id}`)
+    axios.get(`/api?param=${param}`)
 		.then((response)=>{
 			// do stuff
 			this.emit('gameDataIsInDaHouse');
